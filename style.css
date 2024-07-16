@@ -6,7 +6,14 @@
 body{
     margin:0px;
     padding:0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:whitesmoke;
+}
+
+.pageContainer{
     display:flex;
+    width:100%;
+    height:100%;
 }
 
 img{
@@ -17,14 +24,13 @@ img{
 
 .imgContainer{
     height:700px;
-    width: 400px;
+    width: 30%;
     position: relative;
     text-align: center;
-    color: white;
 }
 
 .bannerbackground{
-    width:400px;
+    width:100%;
     background-color: rgba(0,0,0,.5);
     position:absolute;
     top:22%;
@@ -54,6 +60,98 @@ img{
 .textside{
     position:relative;
     display:flex;
-    justify-content:right;
-    
+    flex-direction:column;
+    width:70%;
+    justify-content: center;
+    align-items:left;
+}
+
+.disclaimer{
+    margin-left: 3rem;
+    font-weight:bold;
+    width:60%;
+    margin-bottom:3rem;
+}
+
+.formheader{
+    background-color:white;
+    display:flex;
+    padding-left:3rem;
+    font-weight:600;
+    font-size: 20px;
+    padding-top:1rem;
+    width:100%;
+}
+
+.formContainer{
+    background-color:white;
+    position:relaitve;
+    width:100%;
+    display:flex;
+    justify-content:left;
+    padding:1rem 3rem;
+    padding-right:0px;
+    gap:3rem;
+    box-shadow: 0 4px 8px -8px black;
+}
+.rightFormContainer, .leftFormContainer{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-size:11px;
+    word-spacing:2px;
+    letter-spacing:.5px;
+}
+
+input{
+    margin-bottom:1rem;
+    border-color:#E5E7EB;
+    border-radius:3px;
+    border-width:1px;
+    border-style:solid;
+}
+
+input:invalid {
+    outline-color: red;
+}
+:focus{
+    outline: none;
+}
+input:focus{
+    border-color:blue !important; 
+}
+
+.submitbtn{
+    padding:1rem 3rem;
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    width:30%;
+}
+
+button{
+    width:70%;
+    background-color:#596D48;
+    border:none;
+    color:white;
+    border-radius:5px;
+    padding:10px;
+    font-size:15px;
+}
+
+button:active{ 
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+}
+
+.account{
+    font-size:14px;
+}
+
+a{
+    text-decoration:none;
+    color:#596D48;
+    font-weight:600;
 }

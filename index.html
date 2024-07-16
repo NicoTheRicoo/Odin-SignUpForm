@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class = "pageContainer">
     <div class = "imgContainer">
         <img src = ./background.jpg class="image" alt = "Photo of a jungle">
         <div class = "bannerbackground">
@@ -14,12 +15,33 @@
         </div>
         <div class="imagecredit"></div>
     </div>
+
     <div class="textside">
-        <div class="disclaimer">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</div>
-        <div class="forms"></div>
-        <div class="submitbtn"></div>
-        <div class="account"><a href=""></a></div>
+        <div class="disclaimer">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</div>
+        <div class="formheader">Let's do this!</div>
+        <div class="formContainer">
+            <div class="leftFormContainer">
+                <label for="first_name">FIRST NAME</label>
+                <input type = "text" name = "first_name" id = "first_name" >
+                <label for="email">EMAIL</label>
+                <input type = "email" name = "email" id = "email" required>
+                <label for="password">PASSWORD</label>
+                <input type = "password" name = "password" id = "password" required>
+            </div>
+            <div class="rightFormContainer">
+                <label for="last_name">LAST NAME</label>
+                <input type = "text" name = "last_name" id = "last_name" required>
+                <label for="phone_number">PHONE NUMBER</label>
+                <input type = "tel" name = "phone_number" id = "phone_number" required>
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <input type = "password" name = "confirm_password" id = "confirm_password" required>
+            </div>
+        </div>
+        <div class="submitbtn">
+            <button type = "submit">Create Account</button><br>
+            <div class="account">Already have an account?<a href=""> Log in</a></div>
+        </div>
     </div>
-    
+</div>
 </body>
 </html>
